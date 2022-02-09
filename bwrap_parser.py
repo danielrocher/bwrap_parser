@@ -23,7 +23,7 @@ if __name__ == '__main__':
     parser.add_argument("CMD", help="command")
     args=parser.parse_args()
 
-    arch=Launcher(args.CMD, args.profile, args.debug)
-    arch.start()
-    arch.join()
+    launch=Launcher(args.CMD, args.profile, args.debug)
+    launch.start()
+    launch.join()
 
