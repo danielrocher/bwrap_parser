@@ -34,8 +34,8 @@ bwrap_parser -p bash.profile /bin/bash
 # this is a comment
 
     Example:
-        # disable networking
-        net none # this command creates an empty network namespace
+        # Create a new user namespace
+        unshare-user # this command creates a new user namespace
 
 
 include other.profile
