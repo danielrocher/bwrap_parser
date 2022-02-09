@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Signal
+Exec=bwrap_parser -p /opt/bwrap_parser/profiles/signal.profile /opt/Signal/signal-desktop %U
+Terminal=false
+Type=Application
+Icon=signal-desktop
+StartupWMClass=Signal
+Comment=Private messaging from your desktop
+MimeType=x-scheme-handler/sgnl;x-scheme-handler/signalcaptcha;
+Categories=Network;InstantMessaging;Chat;
+Path=
+StartupNotify=false
