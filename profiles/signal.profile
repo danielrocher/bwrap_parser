@@ -21,6 +21,7 @@ ro-bind /etc/ld.so.cache /etc/ld.so.cache
 ro-bind /var/cache/ /var/cache/
 ro-bind-try /dev/dri /dev/dri
 ro-bind /sys/devices/system /sys/devices/system
+ro-bind /run/user/ /run/user/
 
 tmpfs /tmp
 symlink usr/sbin /sbin
