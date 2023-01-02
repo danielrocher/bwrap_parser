@@ -19,9 +19,9 @@ ro-bind /etc/ld.so.conf /etc/ld.so.conf
 ro-bind-try /etc/ld.so.preload /etc/ld.so.preload
 ro-bind /etc/ld.so.cache /etc/ld.so.cache
 ro-bind /var/cache/ /var/cache/
-ro-bind-try /dev/dri /dev/dri
 ro-bind /sys/devices/system /sys/devices/system
 ro-bind /run/user/ /run/user/
+bind-try /dev/dri /dev/dri
 
 tmpfs /tmp
 symlink usr/sbin /sbin
