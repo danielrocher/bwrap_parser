@@ -12,6 +12,7 @@ ro-bind /etc /etc
 ro-bind /run/user/ /run/user/
 
 bind-try /dev/dri /dev/dri
+bind-try /media/ /media/
 bind-try $HOME/Bureau $HOME/Bureau
 bind-try $HOME/.Xauthority $HOME/.Xauthority
 
