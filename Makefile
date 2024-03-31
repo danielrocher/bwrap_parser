@@ -27,7 +27,7 @@ install_program: build_python make_bwrap_parser_directory
 install_profiles: make_bwrap_parser_directory
 	cp -Pr profiles /opt/bwrap_parser/
 	chmod 755 /opt/bwrap_parser/profiles
-	chmod +r /opt/bwrap_parser/profiles/*
+	chmod 644 /opt/bwrap_parser/profiles/*
 
 uninstall:
 	rm -rf /opt/bwrap_parser/
