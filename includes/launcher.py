@@ -66,5 +66,5 @@ class Launcher(threading.Thread):
 
             line=" ".join(cmd)
             self.debug("start command : {}".format(line))
-            pty.spawn(("sh", "-c", line))
+            pty.spawn(("bash", "-c", line))
 

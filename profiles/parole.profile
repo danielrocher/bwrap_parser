@@ -9,7 +9,8 @@ ro-bind /bin /bin
 ro-bind /lib /lib
 ro-bind /lib64 /lib64
 ro-bind /etc /etc
-ro-bind /run/user/ /run/user/
+tmpfs /run/user/$UID
+bind /run/user/$UID /run/user/$UID
 
 bind-try /dev/dri /dev/dri
 bind-try /media/ /media/
