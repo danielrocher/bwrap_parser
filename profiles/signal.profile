@@ -2,9 +2,12 @@ include /opt/bwrap_parser/profiles/globals.profile
 
 unshare-all
 share-net
+die-with-parent
+new-session
 
 proc /proc
 dev /dev
+dev-bind-try /dev/dri /dev/dri
 
 ro-bind /usr /usr
 ro-bind /bin /bin
@@ -21,7 +24,6 @@ ro-bind /etc/ld.so.cache /etc/ld.so.cache
 ro-bind /var/cache/ /var/cache/
 ro-bind /sys/devices/system /sys/devices/system
 ro-bind /run/user/ /run/user/
-bind-try /dev/dri /dev/dri
 
 tmpfs /tmp
 symlink usr/sbin /sbin

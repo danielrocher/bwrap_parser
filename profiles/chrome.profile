@@ -2,9 +2,12 @@ include /opt/bwrap_parser/profiles/globals.profile
 
 unshare-all
 share-net
+die-with-parent
+new-session
 
 dev /dev
-bind-try /dev/dri /dev/dri
+dev-bind-try /dev/dri /dev/dri
+
 proc /proc
 ro-bind /sys /sys
 bind /run /run
